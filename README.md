@@ -6,13 +6,6 @@
 Aplicação desenvolvida no NLW Unite da Rocketseat na trilha React Native.
 </p>
 
-<p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="# Instruções para execução">Instruções para execução</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-contato">Contato</a>
-</p>
-
 <br>
 
 <p align="center">
