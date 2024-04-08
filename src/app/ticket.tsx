@@ -7,11 +7,15 @@ import { Button } from "@/components/button";
 import { useState } from "react";
 import * as ImagePicker from "expo-image-picker"
 import { QRCode } from "@/components/qrcode";
-import { useBadgeStore } from "@/store/badge-store"
+import { BadgeStore, useBadgeStore } from "@/store/badge-store"
 import { Redirect } from "expo-router";
 import { MotiView } from "moti";
 
-export default function Ticket() {
+type Props = {
+  data: BadgeStore
+}
+
+export default function Ticket({data}: Props) {
   const [expandQRCode, setExpandQRCode] = useState(false)
 
   const badgeStore = useBadgeStore()
@@ -100,7 +104,7 @@ export default function Ticket() {
             activeOpacity={0.7}
             onPress={() => setExpandQRCode(false)}
           >
-            <QRCode value="teste" size={300}/>
+            <QRCode value={badgeStore.data.checkInURL} size={300}/>
             <Text className="font-body text-orange-500 text-sm mt-10 text-center">
               Fechar QRCode
             </Text>

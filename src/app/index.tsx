@@ -35,7 +35,7 @@ export default function Home() {
   }
 
   return  (
-    <View className="flex-1 bg-green-500 items-center justify-center">
+    <View className="flex-1 bg-green-500 items-center justify-center px-6">
       <StatusBar barStyle="light-content" />
       <Image 
       source={require("@/assets/logo.png")} 
